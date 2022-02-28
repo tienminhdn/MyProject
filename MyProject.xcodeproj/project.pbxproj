@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		1A73FC7527CBC8C800A3FB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73FC7427CBC8C800A3FB0F /* ViewController.swift */; };
 		1A73FC7A27CBC8C900A3FB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A73FC7927CBC8C900A3FB0F /* Assets.xcassets */; };
 		1A73FC7D27CBC8C900A3FB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A73FC7B27CBC8C900A3FB0F /* LaunchScreen.storyboard */; };
+		1A8E661627CCD2EC003A4F91 /* FileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E661527CCD2EC003A4F91 /* FileConfig.swift */; };
 		8411E2F9BABF7B5419F27D57 /* Pods_MyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438B101E55DD5D6102D379D /* Pods_MyProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +22,12 @@
 		1A73FC7927CBC8C900A3FB0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A73FC7C27CBC8C900A3FB0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A73FC7E27CBC8C900A3FB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8E661227CCD1F9003A4F91 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		1A8E661327CCD204003A4F91 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1A8E661427CCD20B003A4F91 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		1A8E661527CCD2EC003A4F91 /* FileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConfig.swift; sourceTree = "<group>"; };
 		2EC71037A3B6F89C5F6B1B34 /* Pods-MyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.release.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.release.xcconfig"; sourceTree = "<group>"; };
+		41102FB1FD846EAF54149634 /* Pods-MyProject.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.staging.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.staging.xcconfig"; sourceTree = "<group>"; };
 		8DE40DE50C27EEDED85DA5F3 /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C438B101E55DD5D6102D379D /* Pods_MyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +93,7 @@
 		1A73FC8627CBC9C500A3FB0F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				1A8E661527CCD2EC003A4F91 /* FileConfig.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 		1A73FC8B27CBCA3C00A3FB0F /* Dev */ = {
 			isa = PBXGroup;
 			children = (
+				1A8E661427CCD20B003A4F91 /* Dev.xcconfig */,
 			);
 			path = Dev;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 		1A73FC8C27CBCA4700A3FB0F /* Release */ = {
 			isa = PBXGroup;
 			children = (
+				1A8E661327CCD204003A4F91 /* Release.xcconfig */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -146,6 +155,7 @@
 		1A73FC8D27CBCA5700A3FB0F /* Staging */ = {
 			isa = PBXGroup;
 			children = (
+				1A8E661227CCD1F9003A4F91 /* Staging.xcconfig */,
 			);
 			path = Staging;
 			sourceTree = "<group>";
@@ -185,8 +195,8 @@
 			children = (
 				8DE40DE50C27EEDED85DA5F3 /* Pods-MyProject.debug.xcconfig */,
 				2EC71037A3B6F89C5F6B1B34 /* Pods-MyProject.release.xcconfig */,
+				41102FB1FD846EAF54149634 /* Pods-MyProject.staging.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A73FC7527CBC8C800A3FB0F /* ViewController.swift in Sources */,
+				1A8E661627CCD2EC003A4F91 /* FileConfig.swift in Sources */,
 				1A73FC7127CBC8C800A3FB0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +335,7 @@
 /* Begin XCBuildConfiguration section */
 		1A73FC7F27CBC8C900A3FB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8E661427CCD20B003A4F91 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -385,6 +397,7 @@
 		};
 		1A73FC8027CBC8C900A3FB0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8E661327CCD204003A4F91 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -450,7 +463,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = minh.com.MyProject;
+				PRODUCT_BUNDLE_IDENTIFIER = minh.com.myproject.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -469,12 +482,93 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = minh.com.MyProject;
+				PRODUCT_BUNDLE_IDENTIFIER = minh.com.myproject.release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		1A8E661027CCD1D6003A4F91 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8E661227CCD1F9003A4F91 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		1A8E661127CCD1D6003A4F91 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41102FB1FD846EAF54149634 /* Pods-MyProject.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyProject/Supports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = minh.com.myproject.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -483,6 +577,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A73FC7F27CBC8C900A3FB0F /* Debug */,
+				1A8E661027CCD1D6003A4F91 /* Staging */,
 				1A73FC8027CBC8C900A3FB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -492,6 +587,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A73FC8227CBC8C900A3FB0F /* Debug */,
+				1A8E661127CCD1D6003A4F91 /* Staging */,
 				1A73FC8327CBC8C900A3FB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -1,0 +1,15 @@
+//
+//  Dev.xcconfig
+//  MyProject
+//
+//  Created by T.Minh on 2/28/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+BUNDLE_INDENTIFIER = minh.com.myproject.dev
+DISPLAY_NAME = [DEV]Myproject
+
+BASE_URL = https:\/\/minhdev
